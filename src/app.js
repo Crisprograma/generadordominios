@@ -1,18 +1,18 @@
 /* eslint-disable */
-import "bootstrap";
-import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 window.onload = function() {
   var pronoun = ["the", "our"];
   var adj = ["great", "big"];
   var noun = ["jogger", "racoon"];
 
-  let nombres = ["the", "our", "great", "big", "jogger", "racoon"];
+  let webname = [];
 
-  for (i = 0; i < nombres.length; i++) {
-    console.log(nombres[i]);
+  for (i = 0; i < pronoun.length; i++) {
+    for (j = 0; j < adj.length; j++) {
+      for (k = 0; k < noun.length; k++) {
+        webname.push(pronoun[i] + adj[j] + noun[k] + ".com");
+        console.log(webname);
+      }
+    }
   }
+  return webname;
 };
