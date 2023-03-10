@@ -6,6 +6,13 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello World");
+  var pronoun = ["the", "our"];
+  var adj = ["great", "big"];
+  var noun = ["jogger", "racoon"];
+
+  let nombres = ["the", "our", "great", "big", "jogger", "racoon"];
+
+  for (i = 0; i < nombres.length; i++) {
+    console.log(nombres[i]);
+  }
 };
